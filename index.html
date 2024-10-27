@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta
+		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+		name="viewport"
+	>
+	<meta content="ie=edge" http-equiv="X-UA-Compatible">
+	<link href="style.css" rel="stylesheet">
+	<title>GliveraTeam</title>
+</head>
+<body>
+<!-- sidebar-active btn  -->
+<button aria-label="Toggle sidebar" class="sidebar-toggle">
+	<span class="sidebar-toggle__icon"></span>
+</button>
+
+<!-- sidebar -->
+<aside class="sidebar sidebar--hidden">
+	<div class="sidebar__logo">
+		<img alt="Dashboard" class="sidebar__img" src="./img/logo.png">
+		<span class="sidebar__version">v.01</span>
+	</div>
+
+	<!-- menu -->
+	<nav class="sidebar__menu menu">
+		<ul class="menu__list">
+			<li class="menu__item">
+				<svg class="menu__icon">
+					<use xlink:href="img/svg-sprite.svg#key-square"></use>
+				</svg>
+				<a class="menu__link" href="#">Dashboard</a>
+				<svg class="menu__arrow-icon">
+					<use xlink:href="img/svg-sprite.svg#chevron-right"></use>
+				</svg>
+			</li>
+			<li class="menu__item">
+				<svg class="menu__icon">
+					<use xlink:href="img/svg-sprite.svg#3d-square"></use>
+				</svg>
+				<a class="menu__link" href="#">Product</a>
+				<svg class="menu__arrow-icon">
+					<use xlink:href="img/svg-sprite.svg#chevron-right"></use>
+				</svg>
+			</li>
+			<li class="menu__item menu__item--active">
+				<svg class="menu__icon">
+					<use xlink:href="img/svg-sprite.svg#user-square"></use>
+				</svg>
+				<a class="menu__link" href="#">Customers</a>
+				<svg class="menu__arrow-icon">
+					<use xlink:href="img/svg-sprite.svg#chevron-right"></use>
+				</svg>
+			</li>
+			<li class="menu__item">
+				<svg class="menu__icon">
+					<use xlink:href="img/svg-sprite.svg#wallet-money"></use>
+				</svg>
+				<a class="menu__link" href="#">Income</a>
+				<svg class="menu__arrow-icon">
+					<use xlink:href="img/svg-sprite.svg#chevron-right"></use>
+				</svg>
+			</li>
+			<li class="menu__item">
+				<svg class="menu__icon">
+					<use xlink:href="img/svg-sprite.svg#discount-shape"></use>
+				</svg>
+				<a class="menu__link" href="#">Promote</a>
+				<svg class="menu__arrow-icon">
+					<use xlink:href="img/svg-sprite.svg#chevron-right"></use>
+				</svg>
+			</li>
+			<li class="menu__item">
+				<svg class="menu__icon">
+					<use xlink:href="img/svg-sprite.svg#message-question"></use>
+				</svg>
+				<a class="menu__link" href="#">Help</a>
+				<svg class="menu__arrow-icon">
+					<use xlink:href="img/svg-sprite.svg#chevron-right"></use>
+				</svg>
+			</li>
+		</ul>
+	</nav>
+
+	<!-- user -->
+	<div class="sidebar__user user">
+		<img alt="Evano" class="user__avatar" src="img/avatar.png">
+		<div class="user__text">
+			<p class="user__name">Evano</p>
+			<p class="user__role">Project Manager</p>
+		</div>
+	</div>
+</aside>
+
+<!-- main content -->
+<main class="main-content">
+	<h1 class="main-content__title">Hello Evano 👋🏼,</h1>
+
+	<section class="customers">
+		<div class="customers__header">
+			<div class="customers__header-text">
+				<p class="customers__header-title">All Customers</p>
+				<p class="customers__header-subtitle">Active Members</p>
+			</div>
+			<div class="customers__header-search search">
+				<svg class="search__icon">
+					<use xlink:href="img/svg-sprite.svg#search"></use>
+				</svg>
+				<span class="search__text">Search</span>
+			</div>
+		</div>
+
+		<!--	mobile customers card-->
+		<div class="customer-cards">
+			<div class="customer-cards__card card">
+				<p class="card__text">
+					<p class="card__text-key">Customer Name: </p>
+					<p class="card__text-value">Jane Cooper</p>
+				</p>
+				<p class="card__text">
+					<p class="card__text-key">Company: </p>
+					<p class="card__text-value">Microsoft</p>
+				</p>
+				<p class="card__text">
+					<p class="card__text-key">Phone Number: </p>
+					<p class="card__text-value">(225) 555-0118</p>
+				</p>
+				<p class="card__text">
+					<p class="card__text-key">Email: </p>
+					<p class="card__text-value"> jane@microsoft.com</p>
+				</p>
+				<p class="card__text">
+					<p class="card__text-key">Country: </p>
+					<p class="card__text-value">United States</p>
+				</p>
+				<p class="card__text-key">Status: </p>
+				<button class="customers__btn">Active</button>
+			</div>
+
+			<div class="customer-cards__card card">
+				<p class="card__text">
+					<p class="card__text-key">Customer Name: </p>
+					<p class="card__text-value">Jane Cooper</p>
+				</p>
+				<p class="card__text">
+					<p class="card__text-key">Company: </p>
+					<p class="card__text-value">Microsoft</p>
+				</p>
+				<p class="card__text">
+					<p class="card__text-key">Phone Number: </p>
+					<p class="card__text-value">(225) 555-0118</p>
+				</p>
+				<p class="card__text">
+					<p class="card__text-key">Email: </p>
+					<p class="card__text-value"> jane@microsoft.com</p>
+				</p>
+				<p class="card__text">
+					<p class="card__text-key">Country: </p>
+					<p class="card__text-value">United States</p>
+				</p>
+				<p class="card__text-key">Status: </p>
+				<button class="customers__btn customers__btn--inactive">Inactive</button>
+			</div>
+
+			<div class="customer-cards__card card">
+				<p class="card__text">
+					<p class="card__text-key">Customer Name: </p>
+					<p class="card__text-value">Jane Cooper</p>
+				</p>
+				<p class="card__text">
+					<p class="card__text-key">Company: </p>
+					<p class="card__text-value">Microsoft</p>
+				</p>
+				<p class="card__text">
+					<p class="card__text-key">Phone Number: </p>
+					<p class="card__text-value">(225) 555-0118</p>
+				</p>
+				<p class="card__text">
+					<p class="card__text-key">Email: </p>
+					<p class="card__text-value"> jane@microsoft.com</p>
+				</p>
+				<p class="card__text">
+					<p class="card__text-key">Country: </p>
+					<p class="card__text-value">United States</p>
+				</p>
+				<p class="card__text-key">Status: </p>
+				<button class="customers__btn customers__btn--inactive">Inactive</button>
+			</div>
+
+			<div class="customer-cards__card card">
+				<p class="card__text">
+					<p class="card__text-key">Customer Name: </p>
+					<p class="card__text-value">Jane Cooper</p>
+				</p>
+				<p class="card__text">
+					<p class="card__text-key">Company: </p>
+					<p class="card__text-value">Microsoft</p>
+				</p>
+				<p class="card__text">
+					<p class="card__text-key">Phone Number: </p>
+					<p class="card__text-value">(225) 555-0118</p>
+				</p>
+				<p class="card__text">
+					<p class="card__text-key">Email: </p>
+					<p class="card__text-value"> jane@microsoft.com</p>
+				</p>
+				<p class="card__text">
+					<p class="card__text-key">Country: </p>
+					<p class="card__text-value">United States</p>
+				</p>
+				<p class="card__text-key">Status: </p>
+				<button class="customers__btn">Active</button>
+			</div>
+
+			<div class="customer-cards__card card">
+				<p class="card__text">
+					<p class="card__text-key">Customer Name: </p>
+					<p class="card__text-value">Jane Cooper</p>
+				</p>
+				<p class="card__text">
+					<p class="card__text-key">Company: </p>
+					<p class="card__text-value">Microsoft</p>
+				</p>
+				<p class="card__text">
+					<p class="card__text-key">Phone Number: </p>
+					<p class="card__text-value">(225) 555-0118</p>
+				</p>
+				<p class="card__text">
+					<p class="card__text-key">Email: </p>
+					<p class="card__text-value"> jane@microsoft.com</p>
+				</p>
+				<p class="card__text">
+					<p class="card__text-key">Country: </p>
+					<p class="card__text-value">United States</p>
+				</p>
+				<p class="card__text-key">Status: </p>
+				<button class="customers__btn">Active</button>
+			</div>
+
+			<div class="customer-cards__card card">
+				<p class="card__text">
+					<p class="card__text-key">Customer Name: </p>
+					<p class="card__text-value">Jane Cooper</p>
+				</p>
+				<p class="card__text">
+					<p class="card__text-key">Company: </p>
+					<p class="card__text-value">Microsoft</p>
+				</p>
+				<p class="card__text">
+					<p class="card__text-key">Phone Number: </p>
+					<p class="card__text-value">(225) 555-0118</p>
+				</p>
+				<p class="card__text">
+					<p class="card__text-key">Email: </p>
+					<p class="card__text-value"> jane@microsoft.com</p>
+				</p>
+				<p class="card__text">
+					<p class="card__text-key">Country: </p>
+					<p class="card__text-value">United States</p>
+				</p>
+				<p class="card__text-key">Status: </p>
+				<button class="customers__btn">Active</button>
+			</div>
+
+			<div class="customer-cards__card card">
+				<p class="card__text">
+					<p class="card__text-key">Customer Name: </p>
+					<p class="card__text-value">Jane Cooper</p>
+				</p>
+				<p class="card__text">
+					<p class="card__text-key">Company: </p>
+					<p class="card__text-value">Microsoft</p>
+				</p>
+				<p class="card__text">
+					<p class="card__text-key">Phone Number: </p>
+					<p class="card__text-value">(225) 555-0118</p>
+				</p>
+				<p class="card__text">
+					<p class="card__text-key">Email: </p>
+					<p class="card__text-value"> jane@microsoft.com</p>
+				</p>
+				<p class="card__text">
+					<p class="card__text-key">Country: </p>
+					<p class="card__text-value">United States</p>
+				</p>
+				<p class="card__text-key">Status: </p>
+				<button class="customers__btn">Active</button>
+			</div>
+
+			<div class="customer-cards__card card">
+				<p class="card__text">
+					<p class="card__text-key">Customer Name: </p>
+					<p class="card__text-value">Jane Cooper</p>
+				</p>
+				<p class="card__text">
+					<p class="card__text-key">Company: </p>
+					<p class="card__text-value">Microsoft</p>
+				</p>
+				<p class="card__text">
+					<p class="card__text-key">Phone Number: </p>
+					<p class="card__text-value">(225) 555-0118</p>
+				</p>
+				<p class="card__text">
+					<p class="card__text-key">Email: </p>
+					<p class="card__text-value"> jane@microsoft.com</p>
+				</p>
+				<p class="card__text">
+					<p class="card__text-key">Country: </p>
+					<p class="card__text-value">United States</p>
+				</p>
+				<p class="card__text-key">Status: </p>
+				<button class="customers__btn customers__btn--inactive">Inactive</button>
+			</div>
+		</div>
+		<!--		===================-->
+
+		<!--		Desktop table-->
+		<div class="customer-table">
+			<table class="customer-table__table">
+				<thead class="customer-table__header">
+				<tr class="customer-table__row-header">
+					<th class="customer-table__cell--header customer-table--name">Customer Name</th>
+					<th class="customer-table__cell--header customer-table--company">Company</th>
+					<th class="customer-table__cell--header customer-table--phone">Phone Number</th>
+					<th class="customer-table__cell--header customer-table--email">Email</th>
+					<th class="customer-table__cell--header customer-table--country">Country</th>
+					<th class="customer-table__cell--header customer-table--status">Status</th>
+				</tr>
+				</thead>
+				<tbody class="customer-table__body">
+				<tr class="customer-table__row">
+					<td class="customer-table__cell">Jane Cooper</td>
+					<td class="customer-table__cell">Microsoft</td>
+					<td class="customer-table__cell">(225) 555-0118</td>
+					<td class="customer-table__cell">jane@microsoft.com</td>
+					<td class="customer-table__cell">United States</td>
+					<td class="customer-table__cell">
+						<button class="customers__btn">Active</button>
+					</td>
+				</tr>
+				<tr class="customer-table__row">
+					<td class="customer-table__cell">Floyd Miles</td>
+					<td class="customer-table__cell">Yahoo</td>
+					<td class="customer-table__cell">(205) 555-0100</td>
+					<td class="customer-table__cell">floyd@yahoo.com</td>
+					<td class="customer-table__cell">Kiribati</td>
+					<td class="customer-table__cell">
+						<button class="customers__btn customers__btn--inactive">Inactive</button>
+					</td>
+				</tr>
+				<tr class="customer-table__row">
+					<td class="customer-table__cell">Ronald Richards</td>
+					<td class="customer-table__cell">Adobe</td>
+					<td class="customer-table__cell">(302) 555-0107</td>
+					<td class="customer-table__cell">ronald@adobe.com</td>
+					<td class="customer-table__cell">Israel</td>
+					<td class="customer-table__cell">
+						<button class="customers__btn customers__btn--inactive">Inactive</button>
+					</td>
+				</tr>
+				<tr class="customer-table__row">
+					<td class="customer-table__cell">Marvin McKinney</td>
+					<td class="customer-table__cell">Tesla</td>
+					<td class="customer-table__cell">(252) 555-0126</td>
+					<td class="customer-table__cell">marvin@tesla.com</td>
+					<td class="customer-table__cell">Iran</td>
+					<td class="customer-table__cell">
+						<button class="customers__btn ">Active</button>
+					</td>
+				</tr>
+				<tr class="customer-table__row">
+					<td class="customer-table__cell">Jerome Bell</td>
+					<td class="customer-table__cell">Google</td>
+					<td class="customer-table__cell">(629) 555-0129</td>
+					<td class="customer-table__cell">jerome@google.com</td>
+					<td class="customer-table__cell">Réunion</td>
+					<td class="customer-table__cell">
+						<button class="customers__btn ">Active</button>
+					</td>
+				</tr>
+				<tr class="customer-table__row">
+					<td class="customer-table__cell">Kathryn Murphy</td>
+					<td class="customer-table__cell">Microsoft</td>
+					<td class="customer-table__cell">(406) 555-0120</td>
+					<td class="customer-table__cell">kathryn@microsoft.com</td>
+					<td class="customer-table__cell">Curaçao</td>
+					<td class="customer-table__cell">
+						<button class="customers__btn ">Active</button>
+					</td>
+				</tr>
+				<tr class="customer-table__row">
+					<td class="customer-table__cell">Jacob Jones</td>
+					<td class="customer-table__cell">Yahoo</td>
+					<td class="customer-table__cell">(208) 555-0112</td>
+					<td class="customer-table__cell">jacob@yahoo.com</td>
+					<td class="customer-table__cell">Brazil</td>
+					<td class="customer-table__cell">
+						<button class="customers__btn ">Active</button>
+					</td>
+				</tr>
+				<tr class="customer-table__row">
+					<td class="customer-table__cell">Kristin Watson</td>
+					<td class="customer-table__cell">Facebook</td>
+					<td class="customer-table__cell">(704) 555-0127</td>
+					<td class="customer-table__cell">kristin@facebook.com</td>
+					<td class="customer-table__cell">Åland Islands</td>
+					<td class="customer-table__cell">
+						<button class="customers__btn customers__btn--inactive">Inactive</button>
+					</td>
+				</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<!--Pagination-->
+		<div class="pagination">
+			<p class="pagination__text">Showing data 1 to 8 of 256K entries</p>
+			<div class="pagination__buttons">
+				<button class="pagination__button">&lt;</button>
+				<button class="pagination__button btn pagination__button--active">1</button>
+				<button class="pagination__button btn">2</button>
+				<button class="pagination__button btn">3</button>
+				<button class="pagination__button btn">4</button>
+				<p class="pagination__dots">...</p>
+				<button class="pagination__button btn">40</button>
+				<button class="pagination__button ">&gt;</button>
+			</div>
+		</div>
+	</section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
